@@ -10,10 +10,17 @@ Super rough demo of a masking script to a Shopify (etc) store.
 * You will need to redo this step for each website to avoid footprints and to change your Bitly link.
 * Install the script and the css on your webpage.
 * Make sure to rename the `overlay.css` and `overlay.js` scripts to something opaque with a tool like: https://onlinehashtools.com/generate-random-md5-hash (for instance `overlay.css` might become `a8cd4a0bc52accb8542fe2f82752792c.css`)
+### Testing
 ```html
 <link rel="stylesheet" href="overlay.min.css">
 <script type="text/javascript" src="overlay.obfuscated.js"></script>
 ```
+### Example Deployment
+```html
+<link rel="stylesheet" href="c99a11a53a3748269e3f86d7ac38df11.css">
+<script type="text/javascript" src="085d01c35bfd940e4c7a7ce87f8b7f9b.js"></script>
+```
+
 
 ## Usage
 
