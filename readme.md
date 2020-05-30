@@ -30,7 +30,7 @@ To disable the redirect and test what a bot would see, swap out the complete `ov
 
 ## Thoughts
 
-For practical use, I would also add in a geo blocker to avoid sending unwanted geos to the business page, as well as improve the robustness of the bot check.
+For practical use, I would also add in a geo blocker to avoid sending unwanted geos to the business page, as well as improve the robustness of the bot check. You'll probably have this cloak page behind Cloudflare so you can use https://www.cloudflare.com/cdn-cgi/trace to get the users IP and region.
 
 I would also probably want to deploy a Google Tag Manager to tag anyone that triggers a redirect so that I can map their path to a sale or end user action for campaign optimisation purposes. Naturally, you would want to obfuscate the GTM id as well to avoid footprints.
 
