@@ -31,7 +31,14 @@ To disable the redirect and test what a bot would see, swap out the complete `ov
 ## Thoughts
 
 For practical use, I would also add in a geo blocker to avoid sending unwanted geos to the business page, as well as improve the robustness of the bot check.
+
 I would also probably want to deploy a Google Tag Manager to tag anyone that triggers a redirect so that I can map their path to a sale or end user action for campaign optimisation purposes. Naturally, you would want to obfuscate the GTM id as well to avoid footprints.
+
+## Improvments
+
+If you are improving to pass a human approval, you'll want to also add in a check for your social media platform of choice's corporate IP range ie https://ipinfo.io/AS35995 and even block the geos where you can intuit that their human approval staff are probably located, ie Silicon Valley, Phillipines, etc.
+
+Clearly if it needs to pass a human check, you'll want to also put real text on the dummy page vs illegible spun content, so scraping is probably the way to go for this. 
 
 
 ## License
