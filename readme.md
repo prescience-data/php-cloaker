@@ -5,14 +5,14 @@ Super rough demo of a masking script to a Shopify (etc) store.
 ## Installation
 
 * Set up a free Wordpress website on https://www.000webhost.com and fill it with some cheap scraped / spun content and images from Unsplash.
-* Install the following plugin to safely edit your header https://wordpress.org/plugins/header-footer/
+* Install the following plugin to safely edit your header https://wordpress.org/plugins/header-footer
 * Copy the code from `header.php` into the "Header" section of the plugin. 
-* Optional: Obfuscate the JS file with https://obfuscator.io/ and paste the new obfuscated code over the old JS at the bottom of the script.
+* Optional: Obfuscate the JS file with https://obfuscator.io and paste the new obfuscated code over the old JS at the bottom of the script.
 * Add this html to the "Start of Body tag" section:
 ```html
 <div id="loader"><div class="loading"></div></div>
 ```
-* Sign up for a free API key at https://ipstack.com/ - this will enable server side IP range lookups, free crawler checking, and geo blocking. Copy this to `$MY_IPSTACK_KEY=`.
+* Sign up for a free API key at https://ipstack.com - this will enable server side IP range lookups, free crawler checking, and geo blocking. Copy this to `$MY_IPSTACK_KEY=`.
 * Add your Bitly link to the `$MY_BITLY_LINK=` code.
 * Edit any geos or IP ranges you'd like to block as well.
 * Save the script and test your page! If you have installed correctly you may see a quick flash, then a redirect to your Bitly link. 
