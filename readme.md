@@ -25,6 +25,9 @@ To test what a crawler / anyone you've blocked will see, just add your country o
 $BLOCKED_COUNTRY_CODES = ['PH', 'US']; // Add US if you are in the United States to see what a blocked user sees.
 ```
 
+#### Important note for re-obsfucation...
+If you decide to re-obsfucate the JS you'll need to either add your bitly link directly to the code, or *after* you have obsfucated, search for the string `'ADD_YOUR_BITLY_LINK'` and replace it with `'<?php echo isset($MY_BITLY_LINK) ? $MY_BITLY_LINK : ''; ?>'`
+
 ## Usage
 
 The css will create an overlay with a loading spinner that covers the spun content on the underlying page.
