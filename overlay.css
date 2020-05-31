@@ -1,4 +1,4 @@
-#overlay {
+#loader {
 	height: 100%;
 	width: 100%;
 	position: fixed;
@@ -9,7 +9,7 @@
 	overflow-x: hidden;
 }
 
-.spinner {
+.loading {
 	position: absolute;
 	left: 50%;
 	top: 50%;
