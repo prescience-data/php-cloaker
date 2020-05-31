@@ -39,7 +39,7 @@ When a user hits the page the js will run a bot check (recommend making this mor
 * b) Unmask the overlay and show the bot the underlying website.
 
 
-## Improvments
+## Improvements
 
 I would also probably want to deploy a Google Tag Manager to tag anyone that triggers a redirect so that I can map their path to a sale or end user action for campaign optimisation purposes. You may want to obfuscate the GTM id as well to avoid footprints. Just install a GTM plugin for this via Wordpress.
 
