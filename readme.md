@@ -12,8 +12,8 @@ Super rough demo of a masking script to a Shopify (etc) store.
 ```html
 <div id="loader"><div class="loading"></div></div>
 ```
-* Sign up for a free API key at https://ipstack.com - this will enable server side IP range lookups, free crawler checking, and geo blocking. Copy this to `$MY_IPSTACK_KEY=`.
-* Add your Bitly link to the `$MY_BITLY_LINK=` code.
+* Sign up for a free API key at https://ipstack.com - this will enable server side IP range lookups, free crawler checking, and geo blocking. Copy this to `$IPSTACK_KEY=`.
+* Add your Bitly link to the `$REDIRECT_URL=` code.
 * Edit any geos or IP ranges you'd like to block as well.
 * Save the script and test your page! If you have installed correctly you may see a quick flash, then a redirect to your Bitly link. 
 
