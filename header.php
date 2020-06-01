@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Class CrawlerCheck
+ * Class Cloaker
  * Provides server side checks to see if the visitor is a crawler.
  * Please configure the capitalized settings above the line.
  *
