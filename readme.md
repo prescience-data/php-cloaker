@@ -7,7 +7,7 @@ Super rough demo of a masking script to a Shopify (etc) store.
 #### Server-Side
 * Runs a basic user-agent check
 * Requests client IP info from IPStack
-* Checks IPStacks crawler IP pool
+* Checks IPStack's crawler IP pool
 * Blocks any corporate IP range provided
 * Blocks geos where approval staff or crawlers may be located
 
