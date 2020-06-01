@@ -2,13 +2,14 @@
  * Demo example of redirecting if crawler.
  * Naturally you would want to implement more robust bot checking depending on your use case.
  * You'll want to run this script through https://obfuscator.io to get a unique version each time to avoid any patterns.
- * Note there are PHP sprintf('%s') tokens in the script as it is meant to be used with the 'header.php' component to generate these variables.
+ * Note the uppercase tokens in the script as it is meant to be used with the 'header.php' component to generate these variables.
  * If you wish to use this as a standalone script, replace the 'crawlerUserAgentPattern' token with a regex user agent string, and the redirectUrl token with your bitly url.
+ * If you plan to use it with the server side component, you do not need to change these tokens.
  *
  */
 
-var redirectUrl = '%s';
-var crawlerUserAgentPattern = '%s';
+var redirectUrl = 'REDIRECT_URL';
+var crawlerUserAgentPattern = 'BLOCKED_USER_AGENTS';
 
 function checkUserAgent() {
 
