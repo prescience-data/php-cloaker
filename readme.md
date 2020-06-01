@@ -17,6 +17,41 @@ Super rough demo of a masking script to a Shopify (etc) store.
 * Edit any geos or IP ranges you'd like to block as well.
 * Save the script and test your page! If you have installed correctly you may see a quick flash, then a redirect to your Bitly link. 
 
+## Configuration
+
+Configuration variables can be found at the top of the `header.php` file.
+
+```php
+
+/* Where should human users be redirected? */
+protected $REDIRECT_URL = 'https://bit.ly/3gDNfri';
+
+/* Skip client-side javascript checks? (Only do this if you understand what it does...) */
+protected $BYPASS_CLIENT_SIDE_CHECKS = false;
+
+/* Your free IPStack token from https://ipstack.com/signup/free */
+protected $IP_STACK_TOKEN = '';
+
+/* Blocked country codes (use ISO_3166-1 compliant codes) */
+protected $BLOCKED_COUNTRY_CODES = ['PH'];
+
+/* Blocked city names (reconsider if it's a very common name) */
+protected $BLOCKED_CITY_NAMES = ['San Francisco'];
+
+/* Blocked corporate IP ranges (Example Twitter: https://ipinfo.io/AS35995)  */
+protected $BLOCKED_IP_RANGES = [
+    '185.45.4.0/23', // ...
+];
+
+/* Any additional user-agents you want to block. Will add to the default string, not replace. */
+protected $BLOCKED_USER_AGENTS = [
+    'Twitterbot'
+];
+
+/* If you re-obsfucate the client-side javascript (recommeded), paste the generated code here. Important: Only insert into "" double quotes, not '' single quotes! */
+protected $OBSFUCATED_JAVASCRIPT = "";
+
+```
 
 #### Testing
 
