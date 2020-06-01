@@ -79,7 +79,7 @@ $BLOCKED_COUNTRY_CODES = ['PH', 'US']; // Add US if you are in the United States
 
 Alternatively, install Postman and change your user-agent to one of the blocked agents such as `Twitterbot`, then send a GET request to the homepage.
 
-#### Important note for re-obsfucation...
+#### Important note for using the client-side JS without the server-side components...
 
 If you decide to use the standalone JS and re-obsfucate, you'll need to either add your redirect link and user-agent strings directly to the code.
 If you are using with the server-side PHP component, you will not need to do this.
