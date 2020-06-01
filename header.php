@@ -111,6 +111,16 @@ class CrawlerCheck {
 	}
 
 	/**
+	 * Getter for client-side bypass.
+	 *
+	 * @return bool
+	 */
+	public function shouldBypassClientSideChecks() {
+
+		return !!$this->BYPASS_CLIENT_SIDE_CHECKS;
+	}
+
+	/**
 	 * Getter for error bag.
 	 *
 	 * @return array
@@ -281,6 +291,11 @@ class CrawlerCheck {
 $crawlerCheck = new CrawlerCheck();
 // Run the checks
 $blocked = $crawlerCheck->check();
+
+if ($crawlerCheck->shouldBypassClientSideChecks()) {
+	header(sprintf('Location: %s', $crawlerCheck->getRedirectUrl()));
+	exit();
+}
 
 ?>
 <?php if (!$blocked) { ?>
