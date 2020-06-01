@@ -19,14 +19,19 @@ Super rough demo of a masking script to a Shopify (etc) store.
 
 
 #### Testing
+
 To test what a crawler / anyone you've blocked will see, just add your country or city to the block list.
 
 ```php
 $BLOCKED_COUNTRY_CODES = ['PH', 'US']; // Add US if you are in the United States to see what a blocked user sees.
 ```
 
+Alternatively, install Postman and change your user-agent to one of the blocked agents such as `Twitterbot`, then send a GET request to the homepage.
+
 #### Important note for re-obsfucation...
-If you decide to re-obsfucate the JS you'll need to either add your bitly link directly to the code, or *after* you have obsfucated, search for the string `'ADD_YOUR_BITLY_LINK'` and replace it with `'<?php echo isset($MY_BITLY_LINK) ? $MY_BITLY_LINK : ''; ?>'`
+
+If you decide to use the standalone JS and re-obsfucate, you'll need to either add your redirect link and user-agent strings directly to the code.
+If you are using with the server-side PHP component, you will not need to do this.
 
 ## Usage
 
