@@ -2,6 +2,22 @@
 
 Super rough demo of a masking script to a Shopify (etc) store.
 
+## What it does
+
+#### Server-Side
+* Runs a basic user-agent check
+* Requests client IP info from IPStack
+* Checks IPStacks crawler IP pool
+* Blocks any corporate IP range provided
+* Blocks geos where approval staff or crawlers may be located
+
+
+#### Client-side
+* Adds a "loading" overlay
+* Performs a second user-agent check with js
+* Performs a js 'duck_typing' browser feature check
+* Redirects humans to final url, removes overlay for crawlers / blocked visitors
+
 ## Installation
 
 * Set up a free Wordpress website on https://www.000webhost.com and fill it with some cheap scraped / spun content and images from Unsplash.
