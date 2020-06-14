@@ -75,15 +75,6 @@ After you install, you may need to ctrl-f5 your page to clear your browser cache
 
 Importantly however, you'll notice you can't get back to your site anymore because it's redirecting (obviously!). So to access your admin panel, add `/wp-admin` to the end of your url. 
 
-#### Testing
-
-To test what a crawler / anyone you've blocked will see, view your page through one of these crawler testers:
-
-- https://totheweb.com/learning_center/tools-search-engine-simulator
-- https://www.browseo.net
-
-Alternatively, install Postman and change your user-agent to one of the blocked agents such as `Twitterbot`, then send a GET request to the homepage.
-
 #### Important note for using the client-side JS without the server-side components...
 
 If you decide to use the standalone JS and re-obsfucate, you'll need to either add your redirect link and user-agent strings directly to the code.
@@ -104,8 +95,10 @@ When a user hits the page the js will run a bot check (recommend making this mor
 
 You can test with crawler simulator tools like these:
 
-- https://totheweb.com/learning_center/tools-search-engine-simulator/
-- https://www.browseo.net/
+- https://totheweb.com/learning_center/tools-search-engine-simulator
+- https://www.browseo.net
+
+Alternatively, install Postman and change your user-agent to one of the blocked agents such as `Twitterbot`, then send a GET request to the homepage.
 
 ## Improvements
 
