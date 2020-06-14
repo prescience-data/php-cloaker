@@ -69,13 +69,18 @@ protected $OBSFUCATED_JAVASCRIPT = "";
 
 ```
 
+#### After installation
+
+After you install, you may need to ctrl-f5 your page to clear your browser cache and load the new javascript.
+
+Importantly however, you'll notice you can't get back to your site anymore because it's redirecting (obviously!). So to access your admin panel, add `/wp-admin` to the end of your url. 
+
 #### Testing
 
-To test what a crawler / anyone you've blocked will see, just add your country or city to the block list.
+To test what a crawler / anyone you've blocked will see, view your page through one of these crawler testers:
 
-```php
-$BLOCKED_COUNTRY_CODES = ['PH', 'US']; // Add US if you are in the United States to see what a blocked user sees.
-```
+- https://totheweb.com/learning_center/tools-search-engine-simulator
+- https://www.browseo.net
 
 Alternatively, install Postman and change your user-agent to one of the blocked agents such as `Twitterbot`, then send a GET request to the homepage.
 
