@@ -33,6 +33,13 @@ Super rough demo of a masking script to a Shopify (etc) store.
 * Edit any geos or IP ranges you'd like to block as well.
 * Save the script and test your page! If you have installed correctly you may see a quick flash, then a redirect to your Bitly link. 
 
+#### After installation
+
+After you install, you may need to ctrl-f5 your page to clear your browser cache and load the new javascript.
+
+Importantly however, you'll notice you can't get back to your site anymore because it's redirecting (obviously!). So to access your admin panel, add `/wp-admin` to the end of your url. 
+
+
 ## Configuration
 
 Configuration variables can be found at the top of the `header.php` file.
@@ -69,11 +76,6 @@ protected $OBSFUCATED_JAVASCRIPT = "";
 
 ```
 
-#### After installation
-
-After you install, you may need to ctrl-f5 your page to clear your browser cache and load the new javascript.
-
-Importantly however, you'll notice you can't get back to your site anymore because it's redirecting (obviously!). So to access your admin panel, add `/wp-admin` to the end of your url. 
 
 #### Important note for using the client-side JS without the server-side components...
 
