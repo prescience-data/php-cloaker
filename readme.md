@@ -1,6 +1,6 @@
 # Quick Crawler Masker Demo
 
-Super rough demo of a masking script to a Shopify (etc) store.
+A breif demo of a masking script designed to run on Wordpress blogs.
 
 ## What it does
 
